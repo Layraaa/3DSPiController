@@ -1,5 +1,5 @@
 # 3DSPiController
-With this utility you can transform your Raspberry Pi in a hotspot, where a 3DS can be connected to redirect the inputs from your controller to your 3DS. It will be installed:
+With this utility you can transform your Raspberry Pi in a hotspot, where a 3DS can be connected to redirect the inputs from your controller connected in the Raspberry Pi to your 3DS. It will be installed:
 - Controller drivers
 - [FakeMii](https://github.com/Lectem/fakemii)
 - hostapd and dnsmasq to create the hotspot
