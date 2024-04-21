@@ -8,7 +8,7 @@ With this utility you can transform your Raspberry Pi in a hotspot, where a 3DS 
 ## Requeriments
 - A Raspberry Pi (Any model) with [Raspbian OS](https://www.raspberrypi.com/software/) installed (Desktop Environment)
 - A modified 3DS with [Luma](https://github.com/LumaTeam/Luma3DS)
-- A Xbox wired controller (You can use a controller form another brand or a bluetooth controller if you can set it up)
+- A Xbox wired controller (You can use a controller form another brand or a bluetooth controller if you can set it up, in my case I install drivers and libraries that I need for the Xbox controller)
 
 ## Install
 ```
