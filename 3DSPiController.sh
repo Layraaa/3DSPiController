@@ -13,7 +13,7 @@ fi
 read -r -p "Choose a SSID for your hotspot (Default: InputRedirection) --> " ssid
 read -r -p "Choose a password for your hotspot (Default: example1234) --> " pass
 
-# Set defaults values
+# Set default values
 if [ -z "$ssid" ]; then
     ssid="InputRedirection"
 fi
