@@ -9,6 +9,20 @@ else
     cd ~/Downloads || return
 fi
 
+# Read input values
+read -r -p "Choose a SSID for your hotspot (Default: InputRedirection) --> " ssid
+read -r -p "Choose a password for your hotspot (Default: example1234) --> " pass
+
+# Set defaults values
+if [ -z "$ssid" ]; then
+    ssid="InputRedirection"
+fi
+
+if [ -z "$pass" ]; then
+    pass="example1234"
+fi
+
+
 # Update, install and configurations
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -56,11 +70,11 @@ sudo touch /etc/hostapd/hostapd.conf
 {
     echo 'country_code=US'
     echo 'interface=wlan0'
-    echo 'ssid=InputRedirection'
+    echo "ssid=$ssid"
     echo 'channel=9'
     echo 'auth_algs=1'
     echo 'wpa=2'
-    echo 'wpa_passphrase=example1234'
+    echo "wpa_passphrase=$pass"
     echo 'wpa_key_mgmt=WPA-PSK'
     echo 'wpa_pairwise=TKIP CCMP'
     echo 'rsn_pairwise=CCMP'
