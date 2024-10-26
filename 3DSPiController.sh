@@ -78,7 +78,7 @@ sudo touch /etc/hostapd/hostapd.conf
     echo 'wpa_key_mgmt=WPA-PSK'
     echo 'wpa_pairwise=TKIP CCMP'
     echo 'rsn_pairwise=CCMP'
-} > /etc/dhcpcd.conf
+} > /etc/hostapd/hostapd.conf
 sed -i 's/^#DAEMON_CONF$/DAEMON_CONF="\/etc\/hostapd\/hostapd.conf"/' /etc/default/hostapd
 
 # Autostart script when user log in
