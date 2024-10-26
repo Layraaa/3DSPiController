@@ -60,7 +60,7 @@ sudo service dhcpcd restart
 sudo mv /etc/dnsmasq.conf /etc/dnsmasq.conf.orig
 sudo touch /etc/dnsmasq.conf
 {
-    echo 'interface wlan0'
+    echo 'interface=wlan0'
     echo 'dhcp-range=192.168.4.2,192.168.4.10,255.255.255.0,24h'
 } > /etc/dnsmasq.conf
 sudo systemctl start dnsmasq
