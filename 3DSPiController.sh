@@ -43,7 +43,7 @@ export QT_SELECT=5
 qmake && make
 
 # Hotspot
-apt-get install dnsmasq hostapd -y
+sudo apt-get install dnsmasq hostapd -y
 sudo systemctl stop dnsmasq
 sudo systemctl stop hostapd
 
